@@ -35,8 +35,8 @@ const InfiniteScroll = () => {
 
   const handleScroll = myThrottle(() => {
     if (
-      window.innerHeight + document.documentElement.scrollTop + 500 >
-      document.documentElement.offsetHeight
+      window.innerHeight + document.documentElement.scrollTop + 500 >  //windown.innerHeight = viewPort which is visible to user
+      document.documentElement.offsetHeight   //document.documentElement.offsetHeight = full height of html
     ) {
       fetchData();
     }
